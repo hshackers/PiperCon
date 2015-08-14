@@ -356,11 +356,11 @@ table {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Proxima Nova Soft", "Source Sans Pro", "Calluna Sans", "Grumpy Black 48", Streetscript, "Playfair Display", Lora, Georgia, "Times New Roman", Times, serif;
+  font-family: "Roman Mars", "Proxima Nova Soft", "Source Sans Pro", "Calluna Sans", "Grumpy Black 48", Streetscript, "Playfair Display", Lora, Georgia, "Times New Roman", Times, serif;
   background: white;
   font-weight: normal;
   color: black;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.75em;
   background-attachment: fixed;
   background-size: cover;
@@ -492,7 +492,7 @@ h3 {
   margin-bottom: 0.5em;
 }
 h4 {
-  font-family: "Proxima Nova Soft", "Source Sans Pro", "Calluna Sans", "Grumpy Black 48", Streetscript, "Playfair Display", Lora, Georgia, "Times New Roman", Times, serif;
+  font-family: "Roman Mars", "Proxima Nova Soft", "Source Sans Pro", "Calluna Sans", "Grumpy Black 48", Streetscript, "Playfair Display", Lora, Georgia, "Times New Roman", Times, serif;
   margin-bottom: 0;
   opacity: 0.5;
   font-weight: bold;
@@ -515,7 +515,7 @@ p a:hover {
   border-bottom: 1px solid;
 }
 .lead {
-  font-size: 1.75em;
+  font-size: 1.5em;
   line-height: 1.5em;
 }
 ol,
@@ -1014,4 +1014,9 @@ noscript,
 }
 iframe {
   border: none;
+}
+header {
+  text-align: center;
+  background: #70ad47;
+  color: white;
 }
