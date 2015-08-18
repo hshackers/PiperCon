@@ -1194,6 +1194,25 @@ header {
 #schedule {
   background: rgba(0, 0, 0, 0.15);
 }
+#schedule table {
+  border-radius: 4px;
+  overflow: hidden;
+}
+#schedule table tr {
+  background: white;
+}
+#schedule table tr td {
+  padding: .5em;
+}
+#schedule table tr td p {
+  margin-bottom: 0px;
+}
+#schedule table tr td:first-child {
+  text-align: right;
+}
+#schedule table tr:nth-child(odd) {
+  background: #f2f2f2;
+}
 #venue {
   background-image: url(../img/map_cropped.png);
   background-size: cover;

@@ -62,6 +62,25 @@ header {
 
 #schedule {
   background: rgba(0,0,0,.15);
+  table {
+    border-radius: 4px;
+    overflow: hidden;
+    tr {
+      background: white;
+      td {
+        padding: .5em;
+        p {
+          margin-bottom: 0px;
+        }
+      }
+      td:first-child {
+        text-align: right;
+      }
+      &:nth-child(odd) {
+        background: darken(white,5%);
+      }
+    }
+  }
 }
 
 #venue {
