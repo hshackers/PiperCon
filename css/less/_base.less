@@ -121,6 +121,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   line-height: 1em;
   color: inherit;
+  font-weight: bold;
   a, a:hover {
     color: inherit;
   }
@@ -129,17 +130,17 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 80px;
 }
 h1 {
-  font-size: 56px;
+  font-size: 58px;
   text-align: center;
   line-height: 1.25em;
   margin-bottom: 0.35em;
 }
 h2 {
-  font-size: 48px;
+  font-size: 42px;
   margin-bottom: 0.45em;
 }
 h3 {
-  font-size: 38px;
+  font-size: 36px;
   margin-bottom: 0.5em;
 }
 h4 {
@@ -333,6 +334,7 @@ column, .column {
   flex-grow: 1;
   flex-basis: 0px;
   max-width: 100%;
+  padding: 1em;
 }
 
 [size="10"] {
@@ -472,7 +474,8 @@ column, .column {
     transition-delay: initial;
   }
   &:active {
-
+    transform: translateY(4px);
+    box-shadow: 0 3px 3px rgba(0,0,0,.5), inset 0 -4px 0 rgba(0,0,0,.17);
   }
 }
 

@@ -1,0 +1,108 @@
+@subway_blue: #2850AD;
+@A: @subway_blue;
+@C: @subway_blue;
+@E: @subway_blue;
+
+@subway_orange: #FF6319;
+@B: @subway_orange;
+@D: @subway_orange;
+@F: @subway_orange;
+@M: @subway_orange;
+
+@subway_lime: #6CBE45;
+@G: @subway_lime;
+
+@subway_brown: #996633;
+@J: @subway_brown;
+@Z: @subway_brown;
+
+@subway_lightgray: #A7A9AC;
+@L: @subway_lightgray;
+
+@subway_yellow: #FCCC0A;
+@N: @subway_yellow;
+@Q: @subway_yellow;
+@R: @subway_yellow;
+
+@subway_gray: #808183;
+@S: @subway_gray;
+
+@subway_teal: #3D9DBF;
+@T: @subway_teal;
+
+@subway_red: #EE352E;
+@1: @subway_red;
+@2: @subway_red;
+@3: @subway_red;
+@one: @subway_red;
+@two: @subway_red;
+@three: @subway_red;
+
+@subway_green: #00933C;
+@4: @subway_green;
+@5: @subway_green;
+@6: @subway_green;
+@four: @subway_green;
+@five: @subway_green;
+@six: @subway_green;
+
+@subway_purple: #B933AD;
+@7: @subway_purple;
+@seven: @subway_purple;
+
+@subway_lines: A, C, E, B, D, F, M, G, J, Z, L, N, Q, R, S, T, 1, 2, 3, 4, 5, 6, 7, one, two, three, four, five, six, seven;
+
+subway {
+  background: black;
+  color: white;
+  border-radius: 50%;
+  height: 1.5em;
+  width: 1.5em;
+  line-height: 1.5em;
+  margin-right: .25em;
+  width: 1.5em;
+  font-size: 1em;
+  display: inline-block;
+  font-weight: bold;
+  // font-family: helvetica, standard, arial, sans-serif;
+  vertical-align: middle;
+  &:before {
+    content: attr(line);
+    text-align: center;
+    display: block;
+    vertical-align: middle;
+  }
+  &[line=one]:before {
+    content: '1';
+  }
+  &[line=two]:before {
+    content: '2';
+  }
+  &[line=three]:before {
+    content: '3';
+  }
+  &[line=four]:before {
+    content: '4';
+  }
+  &[line=five]:before {
+    content: '5';
+  }
+  &[line=six]:before {
+    content: '6';
+  }
+  &[line=seven]:before {
+    content: '7';
+  }
+  &[line=PATH]:before {
+    font-size: .5em;
+  }
+}
+
+
+subway {
+  .-(@i: length(@subway_lines)) when (@i > 0) {
+    @name: extract(@subway_lines, @i);
+    &[line=@{name}] {background: @@name}
+    .-((@i - 1));
+  } .-;
+}
