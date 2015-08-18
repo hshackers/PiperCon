@@ -1195,7 +1195,7 @@ header {
   background: rgba(0, 0, 0, 0.15);
 }
 #venue {
-  background-image: url(/img/map_cropped.png);
+  background-image: url(../img/map_cropped.png);
   background-size: cover;
   background-position: center;
   background-color: #70ad47;
